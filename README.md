@@ -1,5 +1,7 @@
 # FluidCloudRedirect (流体云重定向)
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+
 将 OPPO/一加「流体云」(智慧决策服务 `com.oplus.metis`)识别出的网页链接重定向到你选择的浏览器。
 
 LSPosed 模块,基于 **libxposed 新 API**(`io.github.libxposed:api:102.0.0`,minApi/targetApi=101)。
@@ -71,3 +73,11 @@ app/src/main/resources/META-INF/xposed/   java_init.list · module.prop · scope
 - hook 进程内远程偏好**只读**(libxposed API 语义),写入只能发生在设置 App 端;
 - `META-INF/xposed` 三件套由 `verifyXposedMetadata` 任务把关,改打包方式时请保留该校验;
 - 智慧决策服务未来若把「打开动作」下沉到检测层,监控位日志会首先暴露,届时主 hook 迁移即可。
+
+## 开源协议
+
+本项目基于 [GPL-3.0](LICENSE) 协议开源。
+
+Copyright (c) 2026 wangliaoqiongchen
+
+任何对本项目代码的复制、修改与再分发,均须遵循 GPL-3.0:衍生作品必须同样以 GPL-3.0 开源并保留版权声明。
