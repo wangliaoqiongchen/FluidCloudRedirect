@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.流体云重定向" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- SplashScreen 兼容主题:displayed until installSplashScreen() 交还;
+         背景用品牌蓝,白色双向箭头前景才可见 -->
+    <style name="Theme.流体云重定向.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FF3A62D0</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.流体云重定向</item>
+    </style>
+</resources>

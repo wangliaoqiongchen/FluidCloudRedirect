@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">流体云重定向</string>
+
+    <!-- 模块描述(LSPosed 面板显示;module.prop 为权威来源) -->
+    <string name="xposed_description">将流体云网页链接重定向到用户选择的浏览器</string>
+
+    <!-- 状态卡 -->
+    <string name="status_active_title">重定向已开启</string>
+    <string name="status_active_subtitle">目标:%1$s</string>
+    <string name="status_disabled_title">重定向已禁用</string>
+    <string name="status_disabled_subtitle">流体云卡片将保持系统默认行为</string>
+    <string name="status_inactive_title">模块未激活</string>
+    <string name="status_inactive_subtitle">未检测到 LSPosed 服务。请确认:1) 已在 LSPosed 中启用本模块;2) 作用域已勾选"智慧决策服务";3) 重启手机后重试。</string>
+    <string name="status_scope_missing_title">作用域未配置</string>
+    <string name="status_scope_missing_subtitle">需要把"智慧决策服务(com.oplus.metis)"加入模块作用域</string>
+    <string name="request_scope">一键申请作用域</string>
+    <string name="request_scope_approved">作用域申请成功,重启手机或强制停止智慧决策服务后生效</string>
+    <string name="request_scope_failed">作用域申请失败:%1$s</string>
+    <string name="change_target">更改</string>
+    <string name="target_uninstalled">所选浏览器已被卸载,请重新选择</string>
+
+    <!-- 浏览器列表 -->
+    <string name="browser_list_header">选择目标浏览器</string>
+    <string name="disable_redirect">禁用重定向</string>
+    <string name="disable_redirect_subtitle">不干预流体云卡片</string>
+    <string name="no_browsers">未找到可用浏览器</string>
+    <string name="selection_saved">已选择:%1$s</string>
+    <string name="save_failed">保存失败</string>
+
+    <!-- 规则设置 -->
+    <string name="section_rules">重定向规则</string>
+    <string name="rule_protocol_title">协议卡片</string>
+    <string name="rule_protocol_subtitle">heytapbrowser://webpage?url= 链接,提取真实网址后打开</string>
+    <string name="rule_text_search_title">文字搜索卡片</string>
+    <string name="rule_text_search_subtitle">识别为文字搜索意图的卡片(textType 29)</string>
+    <string name="rule_heytap_http_title">OPPO 浏览器网页卡片</string>
+    <string name="rule_heytap_http_subtitle">目标被硬编码为 OPPO 浏览器的 http(s) 网页卡片</string>
+    <string name="rule_browser_card_title">任意浏览器卡片(实验性)</string>
+    <string name="rule_browser_card_subtitle">目标是其他浏览器的网页卡片也重定向,可能误伤定向卡片</string>
+    <string name="verbose_log_title">详细日志</string>
+    <string name="verbose_log_subtitle">在 LSPosed 日志输出监控位与每次命中详情</string>
+
+    <!-- 诊断 -->
+    <string name="section_diagnostics">诊断</string>
+    <string name="diag_framework">框架:%1$s</string>
+    <string name="diag_scope">作用域:%1$s</string>
+    <string name="diag_scope_none">空</string>
+    <string name="diag_log_hint">查看日志:LSPosed 管理器 → 日志,过滤 "FluidRedirect"</string>
+
+    <!-- 关于 -->
+    <string name="about_title">关于</string>
+    <string name="about_body">复制链接后,流体云会把识别出的网页卡片硬编码到 OPPO 浏览器打开。本模块在卡片执行层把它重定向到你在此选择的浏览器:覆盖 heytapbrowser:// 协议卡片、文字搜索卡片与被硬编码为 OPPO 浏览器的网页卡片;目标通过 LSPosed 远程偏好下发,即时生效,无需重启智慧决策服务。核心挂钩仅限智慧决策服务的 :text_intent 进程。</string>
+    <string name="about_version">%1$s (%2$s)</string>
+</resources>

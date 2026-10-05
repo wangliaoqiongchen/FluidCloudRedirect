@@ -1,0 +1,17 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+#
+# For more details, see
+#   https://d.android.com/r/tools/r8/keep-rules
+
+# 模块入口由 META-INF/xposed/java_init.list 按名反射加载,R8 看不到引用,必须保留
+-keep class com.mo.fkLTY.hook.MainHook { *; }
+
+# Hooker 实例虽由模块代码创建,但 intercept() 由框架回调;连同引擎一并保留,避免优化改名后日志/排障困难
+-keep class com.mo.fkLTY.hook.RedirectHooker { *; }
+-keep class com.mo.fkLTY.hook.ParseIntentHooker { *; }
+-keep class com.mo.fkLTY.hook.MonitorHooker { *; }
+-keep class com.mo.fkLTY.hook.ReflectedTextIntent { *; }
+
+# XposedProvider 在 AndroidManifest 中声明,AGP 会自动保留,此处显式声明以防误删
+-keep class io.github.libxposed.service.XposedProvider { *; }

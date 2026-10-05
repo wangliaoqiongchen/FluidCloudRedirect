@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 双向箭头:流体云卡片 →  你的浏览器 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M33,44 L71,44 M62,35 L71,44 L62,53"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="7.5" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M75,64 L37,64 M46,55 L37,64 L46,73"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="7.5" />
+</vector>

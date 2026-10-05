@@ -1,0 +1,8 @@
+id=fkLTY
+name=流体云重定向
+version=1.0.2
+versionCode=13
+author=fkLTY
+description=将流体云(智慧决策服务)识别的网页链接重定向到你选择的浏览器:支持协议卡片、文字搜索卡片与被硬编码为 OPPO 浏览器的网页卡片,选择即时生效
+minApiVersion=101
+targetApiVersion=101

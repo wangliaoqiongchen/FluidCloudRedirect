@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">FluidCloud Redirect</string>
+
+    <string name="xposed_description">Redirect fluid-cloud web links to the browser of your choice</string>
+
+    <!-- Status card -->
+    <string name="status_active_title">Redirect enabled</string>
+    <string name="status_active_subtitle">Target: %1$s</string>
+    <string name="status_disabled_title">Redirect disabled</string>
+    <string name="status_disabled_subtitle">Fluid cloud cards keep the system default behavior</string>
+    <string name="status_inactive_title">Module not active</string>
+    <string name="status_inactive_subtitle">LSPosed service not detected. Please check: 1) the module is enabled in LSPosed; 2) scope includes "Smart Decision Service"; 3) reboot the phone and retry.</string>
+    <string name="status_scope_missing_title">Scope not configured</string>
+    <string name="status_scope_missing_subtitle">Add "Smart Decision Service (com.oplus.metis)" to the module scope</string>
+    <string name="request_scope">Request scope</string>
+    <string name="request_scope_approved">Scope approved. Reboot the phone or force-stop the Smart Decision Service to apply.</string>
+    <string name="request_scope_failed">Scope request failed: %1$s</string>
+    <string name="change_target">Change</string>
+    <string name="target_uninstalled">The selected browser was uninstalled, please pick again</string>
+
+    <!-- Browser list -->
+    <string name="browser_list_header">Choose target browser</string>
+    <string name="disable_redirect">Disable redirect</string>
+    <string name="disable_redirect_subtitle">Leave fluid cloud cards untouched</string>
+    <string name="no_browsers">No browser available</string>
+    <string name="selection_saved">Selected: %1$s</string>
+    <string name="save_failed">Failed to save</string>
+
+    <!-- Rules -->
+    <string name="section_rules">Redirect rules</string>
+    <string name="rule_protocol_title">Protocol cards</string>
+    <string name="rule_protocol_subtitle">heytapbrowser://webpage?url= links, open the real URL</string>
+    <string name="rule_text_search_title">Text search cards</string>
+    <string name="rule_text_search_subtitle">Cards detected as web search intent (textType 29)</string>
+    <string name="rule_heytap_http_title">OPPO browser web cards</string>
+    <string name="rule_heytap_http_subtitle">http(s) web cards hardcoded to the OPPO browser</string>
+    <string name="rule_browser_card_title">Any browser card (experimental)</string>
+    <string name="rule_browser_card_subtitle">Also redirect web cards targeting other browsers; may catch directed cards</string>
+    <string name="verbose_log_title">Verbose logging</string>
+    <string name="verbose_log_subtitle">Log monitor hook and every redirect hit to the LSPosed log</string>
+
+    <!-- Diagnostics -->
+    <string name="section_diagnostics">Diagnostics</string>
+    <string name="diag_framework">Framework: %1$s</string>
+    <string name="diag_scope">Scope: %1$s</string>
+    <string name="diag_scope_none">empty</string>
+    <string name="diag_log_hint">View logs: LSPosed manager → Logs, filter "FluidRedirect"</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_body">After you copy a link, the fluid cloud hardcodes detected web cards to the OPPO browser. This module redirects them at the card execution layer to the browser you pick here: heytapbrowser:// protocol cards, text-search cards and web cards hardcoded to the OPPO browser are covered. Your choice is delivered via LSPosed remote preferences and applies instantly — no need to restart the Smart Decision Service. Hooks live only in the :text_intent process.</string>
+    <string name="about_version">%1$s (%2$s)</string>
+</resources>

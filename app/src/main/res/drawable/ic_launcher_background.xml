@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="108"
+                android:endY="108"
+                android:startX="0"
+                android:startY="0"
+                android:type="linear">
+                <item
+                    android:color="#FF5A8BFF"
+                    android:offset="0.0" />
+                <item
+                    android:color="#FF2A47C4"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- 装饰圆:呼应"流体云"的轻盈感 -->
+    <path
+        android:fillColor="#14FFFFFF"
+        android:pathData="M84,20m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0" />
+    <path
+        android:fillColor="#0DFFFFFF"
+        android:pathData="M20,92m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0" />
+</vector>

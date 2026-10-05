@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ZCode 工作区工具文件
+.zcode/
+.zcodeignore
+
+# 发布签名(个人模块,密钥与密码同仓管理;若公开仓库请移出)
+keystore.properties
+app/release.keystore
+
+# 本地重要资料存档(逆向分析文档,不上传)
+重要文件/
